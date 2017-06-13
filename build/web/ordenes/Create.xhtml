@@ -40,7 +40,7 @@
                         <p:calendar id="ordFechaRetiro" pattern="MM/dd/yyyy" value="#{order1Controller.selected.ordFechaRetiro}" title="#{bundle.EditOrder1Title_ordFechaRetiro}"  showOn="button"/>
                         <p:outputLabel value="#{bundle.CreateOrder1Label_plato}" for="plato" />
                         <p:selectOneMenu id="plato" value="#{order1Controller.selected.plato}" required="true" requiredMessage="#{bundle.EditOrder1RequiredMessage_plato}">
-                            <f:selectItem itemLabel="Seleccione un Plato"/>
+                            <f:selectItem itemLabel="Seleccione un Plato Please"/>
                             <f:selectItems value="#{platoController.itemsAvailableSelectOne}"
                                            var="platoItem" itemLabel="#{platoItem.plaNombre}  -  $#{platoItem.plaPrecio}"
                                            itemValue="#{platoItem}"/>
