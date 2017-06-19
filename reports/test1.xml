@@ -1,9 +1,12 @@
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-  
-<suite name="reports" verbose="1" >
-  <test name="Order1Test" >
-    <classes>
-       <class name="com.ordermeal1.entities.Order1Test" />
-    </classes>
-  </test>
-</suite>
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite>
+    <testcase name="Order1Test" classname="com.ordermeal1.entities.Order1Test">
+	   	<!-- If the test didn't pass, specify ONE of the following 3 cases -->
+	    <!-- option 1 --> <skipped />
+	    <!-- option 2 --> <failure message="my failure message">my stack trace</failure>
+	    <!-- option 3 --> <error message="my error message">my crash report</error>
+
+    	<system-out>my STDOUT dump</system-out>
+    	<system-err>my STDERR dump</system-err>
+	</testcase>
+</testsuite>
