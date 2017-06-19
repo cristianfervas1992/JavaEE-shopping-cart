@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+  
+<suite name="reports" verbose="1" >
+  <test name="Order1Test" >
+    <classes>
+       <class name="com.ordermeal1.entities.Order1Test" />
+    </classes>
+  </test>
+</suite>
